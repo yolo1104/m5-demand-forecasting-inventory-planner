@@ -1,4 +1,14 @@
-﻿.venv/
+.venv/
 __pycache__/
 *.py[cod]
 data/
+artifacts/
+.ipynb_checkpoints/
+.virtual_documents/
+*.ipynb_checkpoints
+project1.ipynb
+Untitled.ipynb
+notebooks/*.ipynb
+.streamlit/secrets.toml
+.DS_Store
+*.egg-info/

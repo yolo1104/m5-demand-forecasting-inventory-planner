@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m5-inventory-planner"
+version = "0.1.0"
+description = "Leakage-aware M5 demand forecasting and inventory planning"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.2,<3",
+    "scikit-learn>=1.4,<2",
+    "lightgbm>=4.5,<5",
+    "plotly>=5.22,<7",
+    "streamlit>=1.39,<2",
+]
+
+[project.scripts]
+m5-inventory = "m5_inventory.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
