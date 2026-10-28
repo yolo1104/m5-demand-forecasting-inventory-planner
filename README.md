@@ -2,6 +2,10 @@
 
 An end-to-end retail demand forecasting and inventory decision-support project using the M5 Walmart dataset. A global LightGBM model is compared with a seasonal-naive baseline in a chronological 28-day backtest; the dashboard then turns forecasts into a transparent lead-time stock recommendation.
 
+## Live demo
+
+[Open the interactive Streamlit dashboard](https://m5-demand-forecasting-inventory-planner-yolo1104.streamlit.app/). The hosted app uses a clearly labeled synthetic preview because the Kaggle data and generated forecasts are kept out of Git. The measured M5 backtest results are documented below and in [the results note](reports/results_summary.md).
+
 ## What it answers
 
 Can a global model improve daily unit forecasts for high-volume items at one store, and how might those forecasts inform a simple replenishment target?
